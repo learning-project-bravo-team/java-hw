@@ -44,7 +44,7 @@ public class SKrupHW62 {
         int counter = 0;
         for (String[] row : array) {
             for (String cell : row) {
-                int i = cell.indexOf('е');
+                int i = cell.toLowerCase().indexOf('е');
                 if (i != -1) {
                     continue;
                 }
