@@ -1,21 +1,10 @@
 import skrupskaya.Hw6.HW61;
-import skrupskaya.Hw6.SKrupHW62;
 import skrupskaya.Hw6.SKrupHW63;
 import skrupskaya.Hw7.SKrupHW7;
 
 static void main(){
-
     System.out.println("Test");
 
-//    HW61.summ();//print the summa of multi array
-//    HW61.max();//print the max number from the array
-//    HW61.countElements();//print the N of elements in the array
-    HW61.summ();//print the summa of multi array skrupskaya.Hw6.SKrupHW62.displayAllO();//print all 'о' Cyrillic one
-    System.out.println(" ");
-    SKrupHW62.countE();
-    SKrupHW62.subStrIndex();
-    System.out.println(" ");
-    SKrupHW62.countStringsWithotE();
     HW61.summ();//print the summa of multi array
     HW61.max();//print the max number from the array
     HW61.countElements();//print the N of elements in the array
@@ -24,6 +13,19 @@ static void main(){
     SKrupHW63.rightPyramid();
     System.out.println("______________________");
     SKrupHW63.fullPyramid();
+
+    Block a = new Block(new int[] {2, 4, 6});
+    System.out.println(a.getWidth());
+    System.out.println(a.getLength());
+    System.out.println(a.getHeight());
+    System.out.println(a.getVolume());
+    System.out.println(a.getSurfaceArea());
+
+    Fighter lew = new Fighter("Lew", 10, 2);
+    Fighter harry = new Fighter("Harry", 5, 4);
+    System.out.println(Fighter.returnTheWinnerName(lew, harry));
+
+
     System.out.println("summ is: ");
     System.out.println(SKrupHW7.summ(5, 8));//summ
     System.out.println("substraction: ");
