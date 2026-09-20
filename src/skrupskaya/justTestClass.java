@@ -1,3 +1,6 @@
+import skrupskaya.Hw6.HW61;
+import skrupskaya.Hw7.SKrupHW7;
+
 static void main(){
     System.out.println("Test");
 

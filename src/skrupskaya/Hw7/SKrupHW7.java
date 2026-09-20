@@ -1,3 +1,5 @@
+package skrupskaya.Hw7;
+
 public class SKrupHW7 {
 
     public static int summ(int a, int b) {
