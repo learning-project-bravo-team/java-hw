@@ -1,6 +1,8 @@
 import skrupskaya.Hw6.HW61;
 import skrupskaya.Hw6.SKrupHW63;
 import skrupskaya.Hw7.SKrupHW7;
+import skrupskaya.Hw8.Block;
+import skrupskaya.Hw8.Fighter;
 
 static void main(){
     System.out.println("Test");

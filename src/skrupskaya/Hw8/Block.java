@@ -1,3 +1,5 @@
+package skrupskaya.Hw8;
+
 public class Block {
     private int width;
     private  int length;

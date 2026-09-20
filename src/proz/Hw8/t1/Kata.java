@@ -28,7 +28,7 @@ public class Kata {
                 }
             }
         }
-        return "Wrong Fighter name";
+        return "Wrong skrupskaya.Hw8.Fighter name";
 
     }
 }

@@ -1,3 +1,5 @@
+package skrupskaya.Hw8;
+
 public class Cube {
 
     private int side;
