@@ -1,3 +1,5 @@
+package skrupskaya.Hw6;
+
 public class HW61 {
 
     public static void summ() {
