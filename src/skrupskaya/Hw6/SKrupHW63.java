@@ -1,3 +1,5 @@
+package skrupskaya.Hw6;
+
 public class SKrupHW63 {
 
     public static void leftPyramid() {

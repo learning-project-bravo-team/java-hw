@@ -1,3 +1,5 @@
+package skrupskaya.Hw6;
+
 public class SKrupHW62 {
     public static void displayAllO() {
         String s = "Перестановочный алгоритм быстрого действия";
