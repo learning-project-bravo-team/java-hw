@@ -1,8 +1,8 @@
 import skrupskaya.Hw6.HW61;
 import skrupskaya.Hw6.SKrupHW63;
 import skrupskaya.Hw7.SKrupHW7;
-import skrupskaya.Hw8.Block;
-import skrupskaya.Hw8.Fighter;
+import skrupskaya.Hw8.*;
+import static skrupskaya.Hw8.Salary.getSum;
 
 static void main(){
     System.out.println("Test");
@@ -49,4 +49,20 @@ static void main(){
     System.out.println(SKrupHW7.findSmallestInt(new int[]{34, 15, 88, 2}));
     System.out.println("String: ");
     System.out.println(SKrupHW7.countingSheep(3));
+
+    Person albert = new Person("Albert", 12, false );
+    System.out.println(albert.getName());
+
+    System.out.println(albert.getAge());
+    Person laura = new Person("Laura", -11, true);
+    System.out.println(laura.getName());
+    System.out.println(laura.getAge());
+
+    Employee grace = new Employee("Grace", 34, true, 10000);
+    System.out.println(grace.getName());
+    System.out.println(grace.isSameName(grace));
+    Employee charls = new Employee("Charls", 23, false, 30000);
+
+    System.out.println(getSum(new Employee[]{grace, charls}));
+    System.out.println(getSum(new Employee[]{charls}));
 }
