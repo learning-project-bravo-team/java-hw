@@ -7,7 +7,11 @@ public class Person {
 
     public Person(String name, int age, boolean gender) {
         this.name = name;
-        this.age = age;
+        if (age >= 0) {
+            this.age = age;
+        } else {
+            System.out.println("Incorrect age");
+        }
         this.gender = gender;
     }
 

@@ -54,8 +54,9 @@ static void main(){
     System.out.println(albert.getName());
 
     System.out.println(albert.getAge());
-    Person laura = new Person("Laura", 11, true);
+    Person laura = new Person("Laura", -11, true);
     System.out.println(laura.getName());
+    System.out.println(laura.getAge());
 
     Employee grace = new Employee("Grace", 34, true, 10000);
     System.out.println(grace.getName());
