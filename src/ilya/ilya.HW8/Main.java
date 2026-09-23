@@ -33,5 +33,33 @@ public class Main {
         Fighter firstFighter = new Fighter("Lew", 10, 2);
         Fighter secondFighter = new Fighter("Harry", 5, 4);
         Fighter.theWinner(firstFighter, secondFighter, "Lew");
+
+        /**
+         * Задача №8.2.1
+         *  Необходимо создать класс Person с полями: имя, возраст, пол. Класс должен иметь метод - getName,
+         *  метод возвращает имя с префиксом “Mr. ” если пол указан как мужской и префикс “Mrs. ” если женский.
+         *  */
+        Person person = new Person("John", "male", 25);
+        System.out.println(person.getName());
+
+        /**
+         * Задача №8.2.2
+         *  Необходимо создать класс Employee с полями как у Person (из предыдущего задания) и поле зарплата.
+         *  Класс должен иметь метод isSameName(Employee employee) который возвращает true, если у сотрудника у которого
+         *  был вызван метод и сотрудника который был передан как параметр, одинаковое имя.
+         *  */
+        Employee eOne = new Employee("John", "male", 25, 10000);
+        Employee eTwo = new Employee("John", "male", 25, 5000);
+        System.out.println(eOne.isSameName(eTwo));
+
+        /**
+         * Задача №8.2.3
+         * Необходимо создать класс Salary с единственным методом - getSum(Employee[] employeeArray), метод должен
+         * возвращать сумму зарплат всех сотрудников из массива переданного в качестве аргумента вызова метода.
+         * */
+        Employee eThree = new Employee("John", "male", 25, 1000);
+        Employee[] employeeArray = {eOne, eTwo, eThree};
+        Salary salary = new Salary();
+        System.out.println(salary.getSum(employeeArray));
     }
 }
