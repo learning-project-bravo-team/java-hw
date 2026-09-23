@@ -37,7 +37,7 @@ public class IlyaHW62 {
                 Для указанной строки ответ будет 6, 15, 29.
          */
         String sss = "Посмотрите как Рите нравится ритм";
-        for (int i = 0; i < ssss.length() - 2; i++) {
+        for (int i = 0; i < sss.length() - 2; i++) {
             if (sss.substring(i, i + 3).equalsIgnoreCase("рит")) {
                 System.out.println(i);
             }
