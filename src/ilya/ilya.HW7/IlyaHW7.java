@@ -13,7 +13,6 @@ public class IlyaHW7 {
      умножение 2х чисел
      деление 2х чисел
      */
-
      public static int sum(int a, int b) {
      return a + b;
      }
