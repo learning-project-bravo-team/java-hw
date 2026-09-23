@@ -8,7 +8,7 @@ public class Main {
          * Задача №8.1.1
          *  Create a public class called Cube without a constructor which gets one single private integer variable Side,
          *  a getter GetSide() and a setter SetSide(int num) method for this property.
-         *  Initialise the side to 0
+         *  Initialise the side to 0.
          *  */
         Cube cube = new Cube();
         cube.setSide(0);
