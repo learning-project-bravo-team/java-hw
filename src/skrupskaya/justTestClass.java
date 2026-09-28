@@ -1,8 +1,9 @@
 import skrupskaya.Hw6.HW61;
 import skrupskaya.Hw6.SKrupHW63;
 import skrupskaya.Hw7.SKrupHW7;
-import skrupskaya.Hw8.*;
-import static skrupskaya.Hw8.Salary.getSum;
+import skrupskaya.Hw8.Block;
+import skrupskaya.Hw8.Fighter;
+import skrupskaya.Hw9.*;
 
 static void main(){
     System.out.println("Test");
@@ -50,19 +51,56 @@ static void main(){
     System.out.println("String: ");
     System.out.println(SKrupHW7.countingSheep(3));
 
-    Person albert = new Person("Albert", 12, false );
-    System.out.println(albert.getName());
 
-    System.out.println(albert.getAge());
-    Person laura = new Person("Laura", -11, true);
-    System.out.println(laura.getName());
-    System.out.println(laura.getAge());
+    Employee employee = new Employee("Employee", 100);
+    System.out.println(employee.getBaseSalary());
+    employee.setBaseSalary(-10);
+    System.out.println(employee.getBaseSalary());
+    employee.setName("Er");
+    System.out.println(employee.getName());
+    employee.setName(null);
+    System.out.println(employee.getName());
+    Worker worker = new Worker("Worker", 200);
+    System.out.println(worker.getSalary());
+    worker.setName(null);
+    System.out.println(worker.getName());
+    worker.setName("er");
+    System.out.println(worker.getName());
+    worker.setBaseSalary(-12);
+    System.out.println(worker.getSalary());
+    Manager manager = new Manager("Manager", 300, 10);
+    System.out.println(manager.getSalary());
+    Director director = new Director("Director", 400, 100);
+    System.out.println(director.getSalary());
+    Manager manager1 = new Manager("Manager1", 300, 0);
+    System.out.println(manager1.getSalary());
+    Director director1 = new Director("Director1", 400, -10);
+    System.out.println(director1.getNumberOfSubordinates());
+    director1.setNumberOfSubordinates(-2345);
+    System.out.println(director1.getNumberOfSubordinates());
+    System.out.println(director1.getSalary());
 
-    Employee grace = new Employee("Grace", 34, true, 10000);
-    System.out.println(grace.getName());
-    System.out.println(grace.isSameName(grace));
-    Employee charls = new Employee("Charls", 23, false, 30000);
+    Employee[] employees = new Employee[4];
+    employees[0] = new Worker("Sara", 1000);
+    employees[1] = new Manager("Uta", 1000, 1);
+    employees[2] = new Director("Urlih", 1000, 2);
+    employees[3] = new Employee("Alize", 1000);// salary does not count
 
-    System.out.println(getSum(new Employee[]{grace, charls}));
-    System.out.println(getSum(new Employee[]{charls}));
+    Manager[] managers = new Manager[2];
+    managers[0] = new Manager("Uta", 1000, 0);
+    managers[1] = new Director("Urlih", 1000, 1);
+
+
+    Office office = new Office();
+    System.out.println(office.searchEmployeeByName(employees, "sara"));
+    System.out.println(office.searchEmployeeByPartName(employees, "uta"));
+    System.out.println(office.searchEmployeeByPartName(employees, "ara"));
+
+    System.out.println(office.searchTotalSalary(employees));
+    System.out.println(office.searchMaxSalary(employees));
+
+    System.out.println(office.searchMaxSalary(managers));
+    System.out.println(office.searchMaxDiffBetweenSalaryAndBaseSalary(managers));
+    System.out.println(office.searchMinDiffBetweenSalaryAndBaseSalary(managers));
+    System.out.println(office.searchMaxNumberOfSubordinates(managers));
 }
