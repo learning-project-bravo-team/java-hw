@@ -1,3 +1,4 @@
+import skrupskaya.Hw10.Test;
 import skrupskaya.Hw6.HW61;
 import skrupskaya.Hw6.SKrupHW63;
 import skrupskaya.Hw7.SKrupHW7;
@@ -65,4 +66,10 @@ static void main(){
 
     System.out.println(getSum(new Employee[]{grace, charls}));
     System.out.println(getSum(new Employee[]{charls}));
+
+    System.out.println(Test.abbrevName("sasha krupskaya"));
+    System.out.println(Test.feast("brown bear","bear claw"));
+    System.out.println(Test.tripleTrouble("aa", "bb", "cc"));
+    System.out.println(Test.position('e'));
+    System.out.println(Test.arrayPlusArray(new int[] {1, 2, 3}, new int[] {4, 5, 6}));
 }
