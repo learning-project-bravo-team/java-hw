@@ -87,9 +87,6 @@ static void main(){
     employees[2] = new Director("Urlih", 1000, 2);
     employees[3] = new Employee("Alize", 1000);// salary does not count
 
-    System.out.println(getSum(new Employee[]{grace, charls}));
-    System.out.println(getSum(new Employee[]{charls}));
-
     System.out.println(Test.abbrevName("sasha krupskaya"));
     System.out.println(Test.feast("brown bear","bear claw"));
     System.out.println(Test.tripleTrouble("aa", "bb", "cc"));
