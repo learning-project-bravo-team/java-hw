@@ -1,3 +1,4 @@
+import skrupskaya.Hw10.Test;
 import skrupskaya.Hw6.HW61;
 import skrupskaya.Hw6.SKrupHW63;
 import skrupskaya.Hw7.SKrupHW7;
@@ -86,21 +87,9 @@ static void main(){
     employees[2] = new Director("Urlih", 1000, 2);
     employees[3] = new Employee("Alize", 1000);// salary does not count
 
-    Manager[] managers = new Manager[2];
-    managers[0] = new Manager("Uta", 1000, 0);
-    managers[1] = new Director("Urlih", 1000, 1);
-
-
-    Office office = new Office();
-    System.out.println(office.searchEmployeeByName(employees, "sara"));
-    System.out.println(office.searchEmployeeByPartName(employees, "uta"));
-    System.out.println(office.searchEmployeeByPartName(employees, "ara"));
-
-    System.out.println(office.searchTotalSalary(employees));
-    System.out.println(office.searchMaxSalary(employees));
-
-    System.out.println(office.searchMaxSalary(managers));
-    System.out.println(office.searchMaxDiffBetweenSalaryAndBaseSalary(managers));
-    System.out.println(office.searchMinDiffBetweenSalaryAndBaseSalary(managers));
-    System.out.println(office.searchMaxNumberOfSubordinates(managers));
+    System.out.println(Test.abbrevName("sasha krupskaya"));
+    System.out.println(Test.feast("brown bear","bear claw"));
+    System.out.println(Test.tripleTrouble("aa", "bb", "cc"));
+    System.out.println(Test.position('e'));
+    System.out.println(Test.arrayPlusArray(new int[] {1, 2, 3}, new int[] {4, 5, 6}));
 }
