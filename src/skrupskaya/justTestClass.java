@@ -1,3 +1,4 @@
+import skrupskaya.Hw10.Hw10;
 import skrupskaya.Hw6.HW61;
 import skrupskaya.Hw6.SKrupHW63;
 import skrupskaya.Hw7.SKrupHW7;
@@ -103,4 +104,10 @@ static void main(){
     System.out.println(office.searchMaxDiffBetweenSalaryAndBaseSalary(managers));
     System.out.println(office.searchMinDiffBetweenSalaryAndBaseSalary(managers));
     System.out.println(office.searchMaxNumberOfSubordinates(managers));
+    System.out.println(Hw10.boolToWord(true));
+    System.out.println(Hw10.basicMath("+", 12, 12));
+    System.out.println(Arrays.toString(Hw10.reverse(5)));
+    System.out.println(Arrays.toString(Hw10.stringToArray("Test for test")));
+    System.out.println(Hw10.correct("Test for 501"));
+
 }
