@@ -1,4 +1,5 @@
 import skrupskaya.Hw10.Test;
+import skrupskaya.Hw10.Hw10;
 import skrupskaya.Hw6.HW61;
 import skrupskaya.Hw6.SKrupHW63;
 import skrupskaya.Hw7.SKrupHW7;
@@ -92,4 +93,27 @@ static void main(){
     System.out.println(Test.tripleTrouble("aa", "bb", "cc"));
     System.out.println(Test.position('e'));
     System.out.println(Test.arrayPlusArray(new int[] {1, 2, 3}, new int[] {4, 5, 6}));
+    Manager[] managers = new Manager[2];
+    managers[0] = new Manager("Uta", 1000, 0);
+    managers[1] = new Director("Urlih", 1000, 1);
+
+
+    Office office = new Office();
+    System.out.println(office.searchEmployeeByName(employees, "sara"));
+    System.out.println(office.searchEmployeeByPartName(employees, "uta"));
+    System.out.println(office.searchEmployeeByPartName(employees, "ara"));
+
+    System.out.println(office.searchTotalSalary(employees));
+    System.out.println(office.searchMaxSalary(employees));
+
+    System.out.println(office.searchMaxSalary(managers));
+    System.out.println(office.searchMaxDiffBetweenSalaryAndBaseSalary(managers));
+    System.out.println(office.searchMinDiffBetweenSalaryAndBaseSalary(managers));
+    System.out.println(office.searchMaxNumberOfSubordinates(managers));
+    System.out.println(Hw10.boolToWord(true));
+    System.out.println(Hw10.basicMath("+", 12, 12));
+    System.out.println(Arrays.toString(Hw10.reverse(5)));
+    System.out.println(Arrays.toString(Hw10.stringToArray("Test for test")));
+    System.out.println(Hw10.correct("Test for 501"));
+
 }
